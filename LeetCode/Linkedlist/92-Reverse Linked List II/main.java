@@ -1,3 +1,11 @@
+// stored in dummy node to handle edge cases like reversing from head
+// prev node to the left position
+// curr node at left position
+//      nextNode = curr.next  working node to be moved
+//      curr.next = nextNode.next  work on curr node to skip nextNode
+//      nextNode.next = prev.next  insert nextNode after prev
+//      prev.next = nextNode  link prev to nextNode
+
 class Node{
     int val;
     Node next;
