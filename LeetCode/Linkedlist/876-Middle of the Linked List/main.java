@@ -1,3 +1,7 @@
+// Using two pointer approach to find the middle of the linked list
+// slow increments by 1 and fast increments by 2
+// middle will be at slow when fast reaches the end
+
 class ListNode{
     int val;
     ListNode next;
