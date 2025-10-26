@@ -1,7 +1,5 @@
 // Using Row and Column Boundaries to traverse the matrix in spiral order
 // Left, Right, Top, Bottom boundaries are maintained and updated after each traversal
-// time complexity: O(n*m) where n is number of rows and m is number of columns
-// space complexity: O(1) if we don't consider the output list, otherwise O(n*m)
 
 import java.util.*;
 public class main {
