@@ -1,3 +1,5 @@
+// Same as LeetCode 59
+// only purpose is to generate matrix instead of returning list
 
 public class main {
     public int[][] generateMatrix(int n) {
