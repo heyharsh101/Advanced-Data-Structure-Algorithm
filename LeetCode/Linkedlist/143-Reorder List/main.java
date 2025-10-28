@@ -1,6 +1,6 @@
 // Find middle using Pointer Approach by slow and fast pointer
 // Reverse the second half of the linked list
-// Merge the two halves 
+// Merge the two halves
 
 class ListNode{
     int val;
@@ -17,16 +17,11 @@ public class main {
         }
         
         ListNode slow = head;
-        ListNode fast = head;
-        ListNode prev = null;
+        ListNode fast = head.next;
         
         while(fast != null && fast.next != null){
-            prev = slow;
             slow = slow.next;
             fast = fast.next.next;
-        }
-        if (prev != null) {
-            prev.next = null;
         }
 
         ListNode curr = slow;
@@ -45,12 +40,13 @@ public class main {
             ListNode temp1 = first.next;
             ListNode temp2 = second.next;
             first.next = second;
-            if (temp1 != null) {
-                second.next = temp1;
-            }
+            second.next = temp1;
+            
             first = temp1;
             second = temp2;
         }
+        if (first != null)
+            first.next = null;
 
     }
 
