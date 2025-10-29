@@ -1,3 +1,5 @@
+// Use math to reverse half of the number and compare
+
 
 public class main {
     public static boolean isPalindrome(int x) {
