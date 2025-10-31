@@ -1,3 +1,5 @@
+// Use left to right greedy approach to place flowers
+// Using if conditions if the current position is 0 and its left and right positions are also 0 (considering edge cases).
 
 public class main {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
