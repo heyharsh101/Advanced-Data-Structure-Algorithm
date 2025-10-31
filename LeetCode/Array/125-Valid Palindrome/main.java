@@ -1,3 +1,6 @@
+// Use two pointers to check for palindrome
+// learn some string functions like Character.isLetterOrDigit() and Character.toLowerCase()
+
 public class main {
     public boolean isPalindrome(String s) {
         int left =0;
