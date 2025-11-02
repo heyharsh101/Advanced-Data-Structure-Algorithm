@@ -1,4 +1,4 @@
-// Use preorder in (Root, Left, Right) fashion
+// Use inorder in (Left, Root, Right) fashion
 
 import java.util.*;
 class TreeNode{
@@ -12,26 +12,26 @@ class TreeNode{
     }
 }
 public class main {
-    public static List<Integer> preorderTraversal(TreeNode root){
+    public static List<Integer> inorderTraversal(TreeNode root){
         List<Integer> ans = new ArrayList<>();
-        preorder(root, ans);
+        inorder(root, ans);
         return ans;
     }
-    public static void preorder(TreeNode root, List<Integer> ans){
+    public static void inorder(TreeNode root, List<Integer> ans){
         if(root == null) return;
 
+        inorder(root.left, ans);
         ans.add(root.val);
-        preorder(root.left, ans);
-        preorder(root.right, ans);
+        inorder(root.right, ans);
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
-        root.right = null;
-        root.right.left = new TreeNode(2);
-        root.left = new TreeNode(3);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        root.left = new TreeNode(4);
 
         main solution = new main();
-        List<Integer> result = solution.preorderTraversal(root);
+        List<Integer> result = solution.inorderTraversal(root);
         System.out.println(result);
     }
 }
