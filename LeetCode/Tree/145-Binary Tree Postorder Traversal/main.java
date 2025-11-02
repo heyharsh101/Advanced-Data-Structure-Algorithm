@@ -1,4 +1,4 @@
-// Use preorder in (Root, Left, Right) fashion
+// Use postorder in (Left, Right, Root) fashion
 
 import java.util.*;
 class TreeNode{
@@ -12,17 +12,17 @@ class TreeNode{
     }
 }
 public class main {
-    public static List<Integer> preorderTraversal(TreeNode root){
+    public static List<Integer> postorderTraversal(TreeNode root){
         List<Integer> ans = new ArrayList<>();
-        preorder(root, ans);
+        postorder(root, ans);
         return ans;
     }
-    public static void preorder(TreeNode root, List<Integer> ans){
+    public static void postorder(TreeNode root, List<Integer> ans){
         if(root == null) return;
 
+        postorder(root.left, ans);
+        postorder(root.right, ans);
         ans.add(root.val);
-        preorder(root.left, ans);
-        preorder(root.right, ans);
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -31,7 +31,7 @@ public class main {
         root.left = new TreeNode(4);
 
         main solution = new main();
-        List<Integer> result = solution.preorderTraversal(root);
+        List<Integer> result = solution.postorderTraversal(root);
         System.out.println(result);
     }
 }
