@@ -1,3 +1,4 @@
+// Use length variable to count the length of the last word.
 
 public class main {
     public static int lengthOfLastWord(String s){
