@@ -1,4 +1,4 @@
-// used to find two indices of numbers in an array that add up to a specific target 
+// used to find two indices of khkjnumbers in an array that add up to a specific target 
 import java.util.Arrays;
 
 public class main {
