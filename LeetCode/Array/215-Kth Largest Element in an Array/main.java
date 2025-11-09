@@ -1,7 +1,6 @@
 // First Approach: Sorting
-// 
-// Time Complexity: O(n log n)
-// Space Complexity: O(1)
+// kth Largest Element in an Array
+// returns the kth largest element in an array
 
 public class main {
     public static int findKthLargest(int[] nums, int k) {
