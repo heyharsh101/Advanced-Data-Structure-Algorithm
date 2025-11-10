@@ -1,3 +1,6 @@
+// basic idea is to keep track of the minimum price seen so far and calculate the potential profit at each price point.
+// If the potential profit exceeds the maximum profit recorded, update the maximum profit.
+
 
 public class main {
     
