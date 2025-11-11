@@ -1,4 +1,6 @@
-public class TreeNode {
+// 4. Recursively check the left and right subtrees of both nodes.
+
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
@@ -31,10 +33,10 @@ class main{
         p1.left = new TreeNode(2);
         p1.right = new TreeNode(3);
         TreeNode q1 = new TreeNode(1);
-        
+
         q1.left = new TreeNode(2);
         q1.right = new TreeNode(3);
         main solution = new main();
-        System.out.println(solution.isSameTree(p1, q1)); 
+        System.out.println(solution.isSameTree(p1, q1));
     }
 }
