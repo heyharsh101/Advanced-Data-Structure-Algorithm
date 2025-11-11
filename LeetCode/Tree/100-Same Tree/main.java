@@ -28,7 +28,7 @@ class main{
     }
 
     public static void main(String[] args) {
-        // create tree nodes and test the isSameTree function here if needed
+        
         TreeNode p1 = new TreeNode(1);
         p1.left = new TreeNode(2);
         p1.right = new TreeNode(3);
