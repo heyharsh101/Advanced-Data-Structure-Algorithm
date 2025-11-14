@@ -1,5 +1,6 @@
 // first initialize two pointers left and right at the beginning and end of the array respectively.
 
+
 public class main {
     public static int maxArea(int[] height) {
         int left = 0;
