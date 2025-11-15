@@ -1,12 +1,4 @@
-// Use HashMap to store the last seen index of each number
 // Check if the current number has been seen before and if the index difference is within k
-// If yes, return true; otherwise, update the index in the map
-// If no such pair is found, return false
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-// LeetCode Problem: https://leetcode.com/problems/contains-duplicate-ii/
-// 
 
 import java.util.HashMap;
 public class main {
