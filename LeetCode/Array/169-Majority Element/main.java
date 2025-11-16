@@ -1,3 +1,7 @@
+// first approach that comes to mind is using hashmap to store the frequency of each element
+// but better approach is to use Boyer-Moore Voting Algorithm
+
+
 public class main {
     public static int majorityElement(int[] nums) {
         int count =0;
