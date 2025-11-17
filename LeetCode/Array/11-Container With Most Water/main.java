@@ -1,4 +1,5 @@
 // first initialize two pointers left and right at the beginning and end of the array respectively.
+// then calculate the area formed between the two lines pointed by the pointers and update the maximum area if the current area is larger.
 
 public class main {
     public static int maxArea(int[] height) {
