@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
+import java.util.*;
 class TreeNode{
     int val;
     TreeNode left;
@@ -27,27 +24,13 @@ public class main {
         return root;
     }
 
-    public static List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            List<Integer> level = new ArrayList<>();
-            for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
-                level.add(node.val);
-                if (node.left != null) queue.add(node.left);
-                if (node.right != null) queue.add(node.right);
-            }
-            result.add(level);
-        }
-
-        return result;
+    public static void printTree(TreeNode root) {
+        if (root == null) return;
+        System.out.print(root.val + " ");
+        printTree(root.left);
+        printTree(root.right);
     }
+    
 
     public static void main(String[] args){
         TreeNode root = new TreeNode(4);
@@ -59,8 +42,8 @@ public class main {
         root.right.right = new TreeNode(9);
 
         TreeNode invertedRoot = invertTree(root);
-        // You can add code here to print or verify the inverted tree if needed.
-        
+        printTree(invertedRoot);
+
 
     }
 }
