@@ -7,14 +7,14 @@ class ListNode{
     }
 }
 public class main {
-    public ListNode swapPairs(ListNode head) {
+    public static ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         recursion(dummy);
         return dummy.next;
     }
 
-    public ListNode recursion(ListNode curr){
+    public static ListNode recursion(ListNode curr){
         if(curr.next == null || curr.next.next == null) {
             return curr.next;
         }
@@ -28,6 +28,12 @@ public class main {
 
         return recursion(first);
     }
+    public static void printLinkedlist(ListNode head){
+        while(head!=null){
+            System.out.print(" " + head.val);
+            head = head.next;
+        }
+    }
     
     public static void main(String[] args){
         ListNode head = new ListNode(1);
@@ -35,13 +41,8 @@ public class main {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        head.next.next.next.next.next = new ListNode(6);
 
-        ListNode curr = swapPairs(head);
-
-        while(curr != null){
-            System.out.print(curr.val + " ");
-            curr = curr.next;
-        }
+        head = swapPairs(head);
+        printLinkedlist(head);
     }
 }
