@@ -1,12 +1,12 @@
 
 public class main {
-    public boolean predictTheWinner(int[] nums) {
+    public static boolean predictTheWinner(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
         int result = winner(nums, left, right);
         return result>=0;
     }
-    public int winner(int[] nums, int left , int right){
+    public static int winner(int[] nums, int left , int right){
         if(left == right){
             return nums[left];
         }
@@ -18,6 +18,9 @@ public class main {
     }
     
     public static void main(String[] args) {
-        int[] nums = {}
+        int nums = {1, 5, 3};
+        main main = new main();
+        boolean ans = main.predictTheWinner(nums);
+        System.out.println(ans);
     }
 }
