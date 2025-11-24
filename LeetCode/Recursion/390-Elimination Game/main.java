@@ -1,26 +1,25 @@
 
 public class main {
-    public static boolean predictTheWinner(int[] nums) {
-        int left = 0;
-        int right = nums.length - 1;
-        int result = winner(nums, left, right);
-        return result>=0;
+    public static int lastRemaining(int n) {
+        int result = solve(1, 1, n, true);
+        return result;
     }
-    public static int winner(int[] nums, int left , int right){
-        if(left == right){
-            return nums[left];
+    private static int solve(int head, int step, int remaining, boolean left){
+        if(remaining == 1){
+            return head;
         }
-        int takeleft = nums[left] - winner(nums, left + 1, right);
 
-        int takeright = nums[right] - winner(nums, left, right - 1);
+        if(left || remaining % 2 ==1){
+            head = head + step;
+        }
 
-        return Math.max(takeleft, takeright);
+        return solve(head, step *2, remaining / 2, !left);
     }
     
     public static void main(String[] args) {
-        int nums = {1, 5, 3};
+        int n = 9;
         main main = new main();
-        boolean ans = main.predictTheWinner(nums);
+        int ans = main.lastRemaining(n);
         System.out.println(ans);
     }
 }
