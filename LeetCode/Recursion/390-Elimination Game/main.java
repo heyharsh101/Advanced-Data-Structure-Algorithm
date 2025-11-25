@@ -1,4 +1,4 @@
-
+// lkj
 public class main {
     public static int lastRemaining(int n) {
         int result = solve(1, 1, n, true);
