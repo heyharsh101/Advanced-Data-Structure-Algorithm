@@ -1,5 +1,5 @@
 // used to find two indices of jnumbers in an array that add up to a specific target 
-//
+
 import java.util.Arrays;
 
 public class main {
