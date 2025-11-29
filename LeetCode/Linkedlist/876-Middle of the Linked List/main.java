@@ -10,6 +10,7 @@ class ListNode{
         this.next = null;
     }
 }
+
 public class main{
     public static ListNode middleNode(ListNode head){
         ListNode slow = head;
