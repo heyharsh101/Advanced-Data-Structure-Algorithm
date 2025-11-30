@@ -11,6 +11,7 @@ class ListNode{
     }
 }
 
+
 public class main{
     public static ListNode middleNode(ListNode head){
         ListNode slow = head;
