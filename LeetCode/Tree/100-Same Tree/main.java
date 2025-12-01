@@ -1,6 +1,5 @@
 // 4. Recursively check the left and right subtrees of both nodes.
 
-
 class TreeNode {
     int val;
     TreeNode left;
