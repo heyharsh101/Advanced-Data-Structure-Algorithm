@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class main {
-    int dp[];
+    static int dp[];
 
     public static int fib(int n) {
         dp = new int[n+1];
@@ -20,7 +20,7 @@ public class main {
         return dp[n];
     }
 
-    
+
     public static void main(String[] args) {
         int n = 10;
         System.out.println(fib(n));
