@@ -15,4 +15,9 @@ public class main {
         }
         return dp[amount];
     }
+    public static void main(String[] args) {
+        int amount = 5;
+        int[] coins = {1,2,5};
+        System.out.println(change(amount, coins));
+    }
 }
