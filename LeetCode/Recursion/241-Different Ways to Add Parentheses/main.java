@@ -35,8 +35,8 @@ public class main {
         return result;
     }
     public static void main(String[] args) {
-        String expression = "2-1-1";
+        String expression = "2*3-4*5";
         List<Integer> results = diffWaysToCompute(expression);
-        System.out.println(results); // Output: [0, 2]
+        System.out.println(results);
     }
 }
