@@ -33,7 +33,7 @@ public class main {
             TreeNode curr = queue.poll();
             level.add(curr.val);
 
-            if(curr.left!=null) 
+            if(curr.left!=null)
                 queue.offer(curr.left);
             if(curr.right!=null)
                 queue.offer(curr.right);
@@ -50,6 +50,6 @@ public class main {
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
         List<List<Integer>> result = solution.levelOrder(root);
-        System.out.println(result); // Output: [[3], [9, 20], [
+        System.out.println(result); // Output: [[3], [9, 20], [15,7]]
     }
 }
