@@ -3,6 +3,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+// Using BFS approach
+
 class TreeNode{
     int val;
     TreeNode left;
