@@ -9,6 +9,8 @@ class TreeNode {
         this.right = null;
     }
 }
+
+// BFS Approach
 public class main {
     public static int maxDepth(TreeNode root) {
         if(root == null) return 0;
