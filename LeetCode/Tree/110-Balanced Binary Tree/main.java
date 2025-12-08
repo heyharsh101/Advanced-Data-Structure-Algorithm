@@ -8,6 +8,7 @@ class TreeNode{
         this.right = null;
     }
 }
+// DFS Approach
 public class main {
     public static boolean isBalanced(TreeNode root) {
         return check(root) != -1;
