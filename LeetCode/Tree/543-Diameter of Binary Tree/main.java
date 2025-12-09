@@ -36,4 +36,5 @@ public class main {
         int result = obj.diameterOfBinaryTree(root);
         System.out.println(result); // Output: 3
     }
+    
 }
