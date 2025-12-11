@@ -1,6 +1,4 @@
 class Main {
-    // Simple DP solution for "Climbing Stairs" (number of ways to climb n steps
-    // when you can take 1 or 2 steps at a time).
     public static int climbStairs(int n) {
         if (n <= 1) return 1;
         int[] dp = new int[n + 1];
