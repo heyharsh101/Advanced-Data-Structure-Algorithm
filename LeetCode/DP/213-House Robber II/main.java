@@ -1,5 +1,6 @@
 
 public class main {
+    // DP solution - Bottom Up technique
     public int rob(int[] nums) {
         int n = nums.length;
         if(n==1) return nums[0];
