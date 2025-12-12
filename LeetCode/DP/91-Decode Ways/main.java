@@ -1,4 +1,5 @@
 class main{
+    // DP solution - Bottom Up technique
     public int numDecodings(String s) {
         int n = s.length();
         if(n==0) return 0;
