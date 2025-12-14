@@ -9,4 +9,12 @@ public class main {
         }
         return result;
     }
+    public static void main(String[] args) {
+        main obj = new main();
+        int[] nums = {1,2,3,4};
+        int[] res = obj.runningSum(nums);
+        for(int val : res){
+            System.out.print(val + " ");
+        }
+    }
 }
