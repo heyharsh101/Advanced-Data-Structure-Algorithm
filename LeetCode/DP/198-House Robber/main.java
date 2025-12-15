@@ -1,4 +1,5 @@
 public class main {
+    
     public static int rob(int[] nums) {
         int n = nums.length;
 
