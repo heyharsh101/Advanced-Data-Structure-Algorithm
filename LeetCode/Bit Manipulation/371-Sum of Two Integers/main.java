@@ -7,7 +7,6 @@ public class main {
         }
         return a;
     }
-
     public static void main(String[] args) {
         main m = new main();
         int a = 1;
