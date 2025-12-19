@@ -22,6 +22,7 @@ public class main {
         }
         return sum;
     }
+    
     public static void main(String[] args) {
         main m = new main();
         int[] nums = {1,4,3,2};
