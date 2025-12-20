@@ -24,3 +24,4 @@ public class main {
         System.out.println(m.strStr(haystack, needle));
     }
 }
+kljhsdf
