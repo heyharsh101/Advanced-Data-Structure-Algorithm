@@ -24,4 +24,4 @@ public class main {
         System.out.println(m.strStr(haystack, needle));
     }
 }
-kljhsdf
+// only compare starting from index 0 of haystack
