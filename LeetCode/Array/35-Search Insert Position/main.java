@@ -1,6 +1,7 @@
 // Use binary search to find the insert position of target in a sorted array.
 // Main :- If the target is not found, the low pointer will indicate the correct insert position.
 
+
 public class main {
     public static int searchinsert(int[] nums, int target){
         int low =0;
