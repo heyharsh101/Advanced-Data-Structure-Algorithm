@@ -4,7 +4,7 @@ public class main {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        int i =0; 
+        int i =0;
         int j = 0;
         while(i < g.length && j< s.length){
             if(s[j] >= g[i]){
@@ -13,5 +13,11 @@ public class main {
             j++;
         }
         return i;
+    }
+    public static void main(String[] args) {
+        main sol = new main();
+        int[] g = {1,2,3};
+        int[] s = {1,1};
+        System.out.println(sol.findContentChildren(g, s)); // Output: 1
     }
 }
