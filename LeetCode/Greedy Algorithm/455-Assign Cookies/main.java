@@ -1,5 +1,6 @@
 import java.util.Arrays;
 public class main {
+    // satisfy the greed of children with cookies
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
