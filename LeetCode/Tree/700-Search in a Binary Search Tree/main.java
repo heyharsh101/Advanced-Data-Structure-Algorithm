@@ -40,7 +40,7 @@ public class main {
         int valToSearch = 2;
         TreeNode result = solution.searchBST(root, valToSearch);
         if (result != null) {
-            solution.preorder(result); // Output the subtree rooted at the found node
+            solution.preorder(result); // Output the subtree rooted at th found node
         } else {
             System.out.println("Value not found in the BST.");
         }
