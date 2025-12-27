@@ -19,5 +19,11 @@ public class main {
             return half * half * x;
         }
     }
-    
+    public static void main(String[] args) {
+        main sol = new main();
+        double x = 2.0;
+        int n = 10;
+        double result = sol.myPow(x, n);
+        System.out.println(result); // Output: 1024.0
+    }
 }
