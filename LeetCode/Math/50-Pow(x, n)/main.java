@@ -19,7 +19,6 @@ public class main {
             return half * half * x;
         }
     }
-    
     public static void main(String[] args) {
         main sol = new main();
         double x = 2.0;
