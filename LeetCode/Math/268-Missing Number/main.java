@@ -1,6 +1,5 @@
 // Optimal Approach
 // Use the formula of sum of n natural numbers
-
 public class main {
     public int missingNumber(int[] nums){
         int n= nums.length;
@@ -11,7 +10,7 @@ public class main {
         }
         return sum - count;
     }
-    
+
     public static void main(String[] args) {
         int[] nums = {3,0,1};
         main obj = new main();
