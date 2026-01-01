@@ -10,7 +10,6 @@ public class main {
         }
         return sum - count;
     }
-    
     public static void main(String[] args) {
         int[] nums = {3,0,1};
         main obj = new main();
