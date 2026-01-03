@@ -24,6 +24,6 @@ public class main {
         main obj = new main();
         int num = 16;
         boolean result = obj.isPerfectSquare(num);
-        System.out.println(result); // Output: true
+        System.out.println(result); // Output:
     }
 }
