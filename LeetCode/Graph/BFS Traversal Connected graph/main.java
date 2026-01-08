@@ -20,7 +20,6 @@ public class main {
                 }
             }
         }
-        
         return bfs;
     }
     public static void main(String[] args) {
