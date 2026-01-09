@@ -7,7 +7,7 @@ public class main {
         boolean visited[] = new boolean[V];
         ArrayList<Integer> bfs = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();
-        
+
         q.add(0);
         visited[0]= true;
         while(!q.isEmpty()){
@@ -28,7 +28,7 @@ public class main {
         for(int i=0;i<V;i++){
             graph.add(new ArrayList<>());
         }
-        // Example edges
+        /
         graph.get(0).add(1);
         graph.get(0).add(2);
         graph.get(1).add(0);
