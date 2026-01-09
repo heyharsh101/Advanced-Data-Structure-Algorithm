@@ -7,6 +7,7 @@ public class main {
         boolean visited[] = new boolean[V];
         ArrayList<Integer> bfs = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();
+        
         q.add(0);
         visited[0]= true;
         while(!q.isEmpty()){
