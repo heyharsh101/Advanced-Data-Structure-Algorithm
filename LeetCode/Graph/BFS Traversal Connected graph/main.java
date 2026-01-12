@@ -22,7 +22,7 @@ public class main {
         }
         return bfs;
     }
-    
+
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
         int V = 5; // Number of vertices
