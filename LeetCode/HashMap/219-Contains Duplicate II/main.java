@@ -1,7 +1,6 @@
 // Check if the current number has been seen before and if the index difference is within k
 
 import java.util.HashMap;
-
 public class main {
     public static boolean containsNearbyDuplicate(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
