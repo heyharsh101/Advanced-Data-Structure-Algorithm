@@ -30,7 +30,6 @@ public class main {
             TreeNode curr = queue.poll();
             level.add(curr.val);
 
-            
             if(curr.left!=null)
                 queue.offer(curr.left);
             if(curr.right!=null)
