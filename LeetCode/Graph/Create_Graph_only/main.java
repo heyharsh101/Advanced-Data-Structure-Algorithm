@@ -23,7 +23,6 @@ public class main {
         graph.add(new Edge(2,3, 25));
         return graph;
     }
-
     public static void print(ArrayList<Edge> graph){
         for(Edge e : graph){
             System.out.println(e.src + "--" + e.dest + ":" + e.weight);
