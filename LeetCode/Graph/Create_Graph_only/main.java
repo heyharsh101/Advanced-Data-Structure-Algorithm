@@ -29,7 +29,6 @@ public class main {
             System.out.println(e.src + "--" + e.dest + ":" + e.weight);
         }
     }
-
     public static void main(String[] args) {
         ArrayList<Edge> graph = new ArrayList<>();
         print(graph);
